@@ -6,11 +6,17 @@ This guide explains how to download videos using `yt-dlp` with the audio removed
 ## Prerequisites
 1. Install `yt-dlp`. You can do this via pip:
    ```bash
-   pip install yt-dlp
+   sudo pacman yt-dlp
+   ```
+   ```bash
+   sudo apt-get install yt-dlp
    ```
 2. Install `ffmpeg`, as `yt-dlp` uses it for processing video files. On Linux, you can install it with:
    ```bash
-   sudo apt install ffmpeg
+   sudo pacman ffmpeg
+   ```
+      ```bash
+   sudo apt-get install ffmpeg
    ```
 
 ## Commands

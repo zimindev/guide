@@ -16,6 +16,12 @@ This guide explains how to download videos using `yt-dlp` with the audio removed
 ## Commands
 
 ### Download Video and Remove Audio
+For example command:
+```bash
+yt-dlp -f bestvideo[ext=mp4]+bestaudio --merge-output-format mp4 --remux-video mp4 --postprocessor-args "-an" <URL>
+```
+
+### Download Video and Remove Audio
 To download a video and strip the audio track, use the following command:
 ```bash
 yt-dlp -f bestvideo[ext=mp4]+bestaudio --merge-output-format mp4 --remux-video mp4 --postprocessor-args "-an" <URL>

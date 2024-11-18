@@ -4,7 +4,8 @@
 This guide explains how to download videos using `yt-dlp` with the audio removed, making it ideal for use cases like video wallpapers.
 
 ## Prerequisites
-1. Install `yt-dlp`. You can do this via pip:
+1. Install `yt-dlp`. You can do this:
+   
    ```bash
    sudo pacman yt-dlp
    ```
@@ -12,6 +13,7 @@ This guide explains how to download videos using `yt-dlp` with the audio removed
    sudo apt-get install yt-dlp
    ```
 2. Install `ffmpeg`, as `yt-dlp` uses it for processing video files. On Linux, you can install it with:
+   
    ```bash
    sudo pacman ffmpeg
    ```
@@ -22,9 +24,10 @@ This guide explains how to download videos using `yt-dlp` with the audio removed
 ## Commands
 
 ### Download Video and Remove Audio
-For example command:
+
+For example download video command:
 ```bash
-yt-dlp -f bestvideo[ext=mp4]+bestaudio --merge-output-format mp4 --remux-video mp4 --postprocessor-args "-an" <URL>
+yt-dlp <URL>
 ```
 
 ### Download Video and Remove Audio
